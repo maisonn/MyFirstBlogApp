@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_09_102221) do
+ActiveRecord::Schema.define(version: 2019_10_09_114648) do
+
+  create_table "hearts", force: :cascade do |t|
+    t.integer "post_id"
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
